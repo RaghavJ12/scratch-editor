@@ -5,13 +5,13 @@ const common = require("./webpack.common.js");
 module.exports = merge([
   common,
   {
-    mode: "development",
+    mode: 'development',
     devServer: {
-      contentBase: path.join(__dirname, "public"),
+      contentBase: path.join(__dirname, 'public'),
       compress: true,
       port: 3000,
-      historyApiFallback: true,
+      historyApiFallback: true
     },
     target: 'web'
-  },
+  }
 ]);

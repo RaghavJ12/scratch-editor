@@ -1,6 +1,7 @@
-var count = 0;
 import { addCommand, removeTab } from '../redux/action';
 import store from './../redux/store';
+
+var count = 0;
 
 export function allowDrop(ev) {
     ev.preventDefault();
