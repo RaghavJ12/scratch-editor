@@ -45,8 +45,8 @@ export default function PreviewArea() {
                     <Icon name="redo-alt" size={20} className="text-red-500 mx-3.5" />
                 </button>
                 <select value={bgcol} onChange={handleChange} className="w-20 p-1 rounded mt-2">
-                    {bgCols.map((col) => (
-                    <option>{col}</option>
+                    {bgCols.map((col,i) => (
+                    <option key={i}>{col}</option>
                     ))}
                 </select>
             </div>
