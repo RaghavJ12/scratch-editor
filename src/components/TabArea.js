@@ -61,7 +61,7 @@ function TabArea() {
                     </button>
                 </div>
             </div>
-            <p className="text-center bg-purple-100 py-2">
+            <p className="text-center bg-blue-100 py-2">
                 DropBox for {getName(currentTab)}
             </p>
         </>

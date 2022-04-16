@@ -1,7 +1,7 @@
 const blocks = {
     Control: [
         {
-            text: 'Wait ^val (in seconds)',
+            text: 'Wait for ^val',
             val: true
         },
         {
@@ -18,11 +18,11 @@ const blocks = {
     ],
     Looks: [
         {
-            text: 'Say Hello ^val (in seconds)',
+            text: 'Say Hello ^val',
             val: true
         },
         {
-            text: 'Think Hmmm for ^val (in seconds)',
+            text: 'Think Hmmm for ^val',
             val: true
         }
     ],
