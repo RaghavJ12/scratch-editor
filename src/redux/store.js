@@ -1,7 +1,5 @@
-import { applyMiddleware, compose, createStore } from 'redux';
+import { compose, createStore } from 'redux';
 import reducer from './reducer';
-
-const middlewares = [];
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__
     ? window.__REDUX_DEVTOOLS_EXTENSION__()
