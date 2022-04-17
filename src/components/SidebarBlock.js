@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { drag } from '../utils/dragNDrop';
+import { drag } from '../utils/dragDrop';
 import getBlockColor from '../utils/getBlockColor';
 import Icon from './Icon';
-import { getTextIcon } from './../utils/stringFormatter';
-import BlockWrapper from './BlockWrapper';
+import { getIcon } from '../utils/getIcon';
+import CommandBlock from './CommandBlock';
 import PropTypes from 'prop-types';
 import { NumericInput } from 'react-typed-inputs';
 
-const SidebarItem = ({ title, data }) => {
+const SidebarBlock = ({ title, data }) => {
     const [val, setVal] = useState([10,10,10,10,10,10]);
     return (
         <>
@@ -24,12 +24,12 @@ const SidebarItem = ({ title, data }) => {
                             title
                         )}-500 text-white px-2 py-1 my-2 text-sm cursor-pointer rounded-lg w-full text-base justify-center`}
                     >
-                        <BlockWrapper text={getTextIcon(_d, 0)} icon={_d?.icon ? "true" : "false"} />
-                        {getTextIcon(_d, 1) && (
+                        <CommandBlock text={getIcon(_d, 0)} icon={_d?.icon ? "true" : "false"} />
+                        {getIcon(_d, 1) && (
                             <Icon
-                                name={getTextIcon(_d, 1)}
+                                name={getIcon(_d, 1)}
                                 size={15}
-                                className="text-green-600 mx-2"
+                                className="text-green-600 mx-2 my-1"
                             />
                         )}
                         {_d.val ?
@@ -37,10 +37,9 @@ const SidebarItem = ({ title, data }) => {
                             let valCopy = [...val];
                             valCopy[i] = value;
                             setVal(valCopy);
-                            console.log("val", val);
                         }} className="w-6 rounded text-black mx-3" />
                         : null}
-                        <BlockWrapper text={getTextIcon(_d, 2)} />
+                        <CommandBlock text={getIcon(_d, 2)} />
                     </div>
                 )
             })}
@@ -48,9 +47,9 @@ const SidebarItem = ({ title, data }) => {
     );
 };
 
-SidebarItem.propTypes = {
+SidebarBlock.propTypes = {
     title: PropTypes.string,
     data: PropTypes.array
 };
 
-export default SidebarItem;
+export default SidebarBlock;

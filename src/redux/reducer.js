@@ -20,25 +20,20 @@ const reducer = (state = INITIAL_STATE, action) => {
         case actionTypes.REMOVE_TAB:
             if (action.payload === 'S1') {
                 toast.error(`Sprint 1 can't be removed`, {
-                    position: 'bottom-left'
+                    position: 'top-right'
                 });
                 return state;
             }
 
-            // Filter tab from tabs array
             const filteredTab = state.tabs.filter(
                 (tabId) => tabId !== action.payload
             );
 
-            // Check if currentTab is removed or not
             let currTabIndex = filteredTab.indexOf(state.currentTab);
 
-            // If current is removed, make the previous one current
             if (currTabIndex === -1) {
                 currTabIndex = filteredTab.length - 1;
             }
-
-            // Delete sprint from command too
 
             const cmds = state.commands;
 

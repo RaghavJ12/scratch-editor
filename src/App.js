@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from './components/Sidebar';
 import MidArea from './components/MidArea';
 import PreviewArea from './components/PreviewArea';
-import { deleteSprite, allowDrop } from './utils/dragNDrop';
+import { deleteSprite, allowDrop } from './utils/dragDrop';
 
 export default function App() {
     return (

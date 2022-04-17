@@ -1,4 +1,4 @@
-export const getTextIcon = (data, loc) => {
+export const getIcon = (data, loc) => {
     const hasIcon = data?.icon;
     const text = hasIcon ? data?.text?.split('#icon') : data?.text;
 

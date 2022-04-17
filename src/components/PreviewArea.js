@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CatSprite from './CatSprite';
 import { useSelector } from 'react-redux';
-import mergeSprite from '../utils/mergeSprite';
+import mergeSprite from '../utils/pushSprite';
 import commandParser from '../utils/commandParser';
 import toast from 'react-hot-toast';
 import Icon from './Icon';
@@ -16,7 +16,7 @@ export default function PreviewArea() {
     const reset = () => {
         const cat = document.querySelector('#movingCat');
         cat.style = '';
-        toast.success('Reset', { position: 'bottom-left' });
+        toast.success('Reset', { position: 'top-right' });
     };
     const execute = async (e) => {
         if (e.target.dataset.run) await commandParser(mergeSprite(commands));

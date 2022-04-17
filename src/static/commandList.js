@@ -1,11 +1,7 @@
-const blocks = {
+const commandList = {
     Control: [
         {
             text: 'Wait for ^val',
-            val: true
-        },
-        {
-            text: 'Repeat ^val for',
             val: true
         }
     ],
@@ -48,4 +44,4 @@ const blocks = {
     ]
 };
 
-export default blocks;
+export default commandList;

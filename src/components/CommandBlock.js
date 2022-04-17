@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {InputNum} from './Input';
 
-function BlockWrapper({ text }) {
-    // let inp = InputNum()
+function CommandBlock({ text }) {
 
     var JSXText = null;
     if (text.includes('$')) {
@@ -31,8 +29,8 @@ function BlockWrapper({ text }) {
     return text;
 }
 
-BlockWrapper.propTypes = {
+CommandBlock.propTypes = {
     text: PropTypes.string
 };
 
-export default BlockWrapper;
+export default CommandBlock;

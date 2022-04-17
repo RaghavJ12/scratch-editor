@@ -1,16 +1,12 @@
 import toast from 'react-hot-toast';
-import { makeRangeIterator, moveCat, sleepFor, turnCat,jumpCat } from './utility';
+import { moveCat, sleepFor, turnCat,jumpCat } from './utility';
 
 export const controlCommands = async (cmd, val) => {
     const splitCmd = cmd.split(' ');
-    console.log(splitCmd);
     switch (splitCmd[0]) {
         case 'Wait':
             await sleepFor(val);
             return;
-
-        case 'Repeat':
-            if (splitCmd[2]) return makeRangeIterator(val);
 
         default:
             return;
@@ -20,7 +16,6 @@ export const controlCommands = async (cmd, val) => {
 export const motionCommands = async (cmd,val) => {
     let splitCmd = cmd.split(' ');
     splitCmd = splitCmd.filter((cmdStr) => cmdStr.trim());
-    console.log("cmd",val);
 
     const cat = document.querySelector('#movingCat');
 
@@ -49,7 +44,7 @@ export const looksCommands = async (cmd,val) => {
 
     const toastConfig = {
         duration: parseInt(splitCmd[3]) * val * 100,
-        position: 'bottom-left',
+        position: 'top-right',
         icon: '🐱'
     };
 

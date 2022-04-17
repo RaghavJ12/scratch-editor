@@ -18,7 +18,6 @@ export function drop(ev) {
 
     const id = ev.dataTransfer.getData('dragId');
     const v = ev.dataTransfer.getData('dragVal');
-    // console.log("pass",v);
 
     if (!id || id.startsWith('dragged') || id.startsWith('sprite')) {
         return;
@@ -28,7 +27,6 @@ export function drop(ev) {
 
     nodeCopy.id = 'dragged' + id + count++;
     nodeCopy.val=v;
-    console.log("calue",nodeCopy.val);
 
     const sprite = store.getState().currentTab;
     store.dispatch(addCommand(sprite, nodeCopy.id, nodeCopy.textContent, nodeCopy.val));

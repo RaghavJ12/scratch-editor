@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { drag } from '../utils/dragNDrop';
-import { switchTab, appendTab } from './../redux/action';
+import { drag } from '../utils/dragDrop';
+import { switchTab, appendTab } from '../redux/action';
 import Icon from './Icon';
 
-function TabArea() {
+function TabList() {
     const tabs = useSelector((state) => state.tabs);
     const currentTab = useSelector((state) => state.currentTab);
     const dispatch = useDispatch();
@@ -15,7 +15,6 @@ function TabArea() {
     };
 
     const toggleTab = (e) => {
-        // setCurrentTab(id);
         dispatch(switchTab(e.target.dataset.tab));
     };
 
@@ -68,4 +67,4 @@ function TabArea() {
     );
 }
 
-export default TabArea;
+export default TabList;
