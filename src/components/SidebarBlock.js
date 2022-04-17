@@ -9,6 +9,9 @@ import { NumericInput } from 'react-typed-inputs';
 
 const SidebarBlock = ({ title, data }) => {
     const [val, setVal] = useState([10,10,10,10,10,10]);
+    console.log("col",title,getBlockColor(
+        title
+    ));
     return (
         <>
             <div className="font-semibold"> {title} </div>
