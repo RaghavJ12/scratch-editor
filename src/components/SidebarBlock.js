@@ -23,9 +23,7 @@ const SidebarBlock = ({ title, data }) => {
                         onDragStart={drag}
                         id={title + i}
                         key={title + i}
-                        className={`${val[i]} flex flex-row flex-wrap bg-${getBlockColor(
-                            title
-                        )}-500 text-white px-2 py-1 my-2 text-sm cursor-pointer rounded-lg w-full text-base justify-center`}
+                        className={`${val[i]} flex flex-row flex-wrap bg-red-500 text-white px-2 py-1 my-2 text-sm cursor-pointer rounded-lg w-full text-base justify-center`}
                     >
                         <CommandBlock text={getIcon(_d, 0)} icon={_d?.icon ? "true" : "false"} />
                         {getIcon(_d, 1) && (
