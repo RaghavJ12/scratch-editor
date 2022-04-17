@@ -74,7 +74,8 @@ const reducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 commands: {
-                    ...commands,
+                    // HERE
+                    ...state.commands,
                     [action.payload.sprite]: action.payload.cmd
                 }
             };
