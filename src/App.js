@@ -4,6 +4,19 @@ import MidArea from './components/MidArea';
 import PreviewArea from './components/PreviewArea';
 import { deleteSprite, allowDrop } from './utils/dragDrop';
 
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAxmagt4lkkUBGhE-GCn8Ujp0ZmA95apvw",
+  authDomain: "scratch-d8f70.firebaseapp.com",
+  projectId: "scratch-d8f70",
+  storageBucket: "scratch-d8f70.appspot.com",
+  messagingSenderId: "440007046786",
+  appId: "1:440007046786:web:f7364689bc8a0775ef669b"
+};
+
+const app = initializeApp(firebaseConfig);
+
 export default function App() {
     return (
         <div
