@@ -1,0 +1,48 @@
+[debug] [2022-04-18T12:50:29.814Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T12:50:29.817Z] Command:       C:\NodeProjects\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-04-18T12:50:29.817Z] CLI Version:   10.6.0
+[debug] [2022-04-18T12:50:29.817Z] Platform:      win32
+[debug] [2022-04-18T12:50:29.817Z] Node Version:  v14.15.4
+[debug] [2022-04-18T12:50:29.819Z] Time:          Mon Apr 18 2022 18:20:29 GMT+0530 (India Standard Time)
+[debug] [2022-04-18T12:50:29.819Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T12:50:29.918Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T12:50:29.918Z] > authorizing via signed-in user (b.b.raghav29@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2022-04-18T12:50:29.985Z] [hub] writing locator at C:\Users\Acer\AppData\Local\Temp\hub-scratch1234500.json
+[debug] [2022-04-18T12:50:30.006Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scratch1234500/sites 
+[debug] [2022-04-18T12:50:31.788Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/scratch1234500/sites 200
+[debug] [2022-04-18T12:50:31.788Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/scratch1234500/sites {"sites":[{"name":"projects/1125166343/sites/scratch1234500","defaultUrl":"https://scratch1234500.web.app","appId":"1:1125166343:web:1d795d5fe4f72bd8c929a2","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-18T12:50:31.788Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scratch1234500/webApps/1:1125166343:web:1d795d5fe4f72bd8c929a2/config [none]
+[debug] [2022-04-18T12:50:33.150Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scratch1234500/webApps/1:1125166343:web:1d795d5fe4f72bd8c929a2/config 200
+[debug] [2022-04-18T12:50:33.151Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scratch1234500/webApps/1:1125166343:web:1d795d5fe4f72bd8c929a2/config {"projectId":"scratch1234500","appId":"1:1125166343:web:1d795d5fe4f72bd8c929a2","storageBucket":"scratch1234500.appspot.com","apiKey":"AIzaSyCPrLqulQK_ytqeNpD8w68wH4wZE78S3Uc","authDomain":"scratch1234500.firebaseapp.com","messagingSenderId":"1125166343"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:43 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:43 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:43 +0000] "GET /app.js HTTP/1.1" 200 313179 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:43 +0000] \"GET /app.js HTTP/1.1\" 200 313179 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:44 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:44 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:45 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:45 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:45 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:45 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:45 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:45 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:46 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Apr/2022:12:53:47 +0000] "GET / HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Apr/2022:12:53:47 +0000] \"GET / HTTP/1.1\" 200 1397 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36\""}}
